@@ -3,4 +3,3 @@ __pycache__/
 pyrepo/
 *.pyc
 .env
-client_secrets.py

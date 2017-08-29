@@ -121,6 +121,8 @@ a {
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
+    border-bottom: solid 15px #42c3c9;
+    margin-bottom: 15px;
 }
 
 .banner.menu {
@@ -140,7 +142,6 @@ a {
 .restaurant-list {
     background-color: #F0F0F0;
     padding: 20px;
-    u
 }
 
 .restaurant-list:hover {

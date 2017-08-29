@@ -32,6 +32,31 @@
     <script src="//apis.google.com/js/platform.js?onload=start"></script>
     <!-- END PRE-REQUISITES FOR GOOGLE SIGN IN -->
     <script>
+        'use strict';
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {
+                return;
+            }
+            js = d.createElement(s);
+            js.type = 'text/javascript';
+            js.id = id;
+            js.async = true;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+            // Listen for the load event
+            js.onload = function () {
+                FB.init({
+                    appId: '{{ facebook_web.app_id }}',
+                    cookie: true,
+                    xfbml: true,
+                    version: 'v2.8'
+                });
+                FB.AppEvents.logPageView();
+            }
+        }(document, 'script', 'facebook-jssdk'));
+
+
         function signInCallback(authResult) {
             if (authResult['code']) {
 
@@ -65,27 +90,6 @@
                 });
             }
         }
-
-        window.fbAsyncInit = function () {
-            FB.init({
-                appId: '{{ facebook_web.app_id }}',
-                cookie: true,
-                xfbml: true,
-                version: 'v2.8'
-            });
-            FB.AppEvents.logPageView();
-        };
-
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) {
-                return;
-            }
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
 
         // Here we run a very simple test of the Graph API after login is
         // successful.  See statusChangeCallback() for when this call is made.
