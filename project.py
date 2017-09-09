@@ -19,6 +19,7 @@ state = ''.join(random.choice(string.ascii_uppercase + string.digits)
 
 app = Flask(__name__)
 app.secret_key = state
+app.config['SESSION_TYPE'] = 'filesystem'
 
 GOOGLE_CLIENT_ID = google_web.get('client_id')
 APPLICATION_NAME = "Restaurant Menu Application"
