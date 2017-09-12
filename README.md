@@ -8,6 +8,11 @@ This is my interpretation and take on the Item Catalog Project for the **Udacity
 - If necessary you may also wish to ```python database_setup.py``
 - Install python if necessary, This program was written using Python 3.6.1
 - Enter the following command into the terminal of your choice ```pip install -r requirements.txt``` to install all required packaged
+- You will then need to create your very own .env file
+- Make a copy of ```.env.example``` named ```.env```
+- Immediately add ```.env``` to your ```.gitignore``` in order to protect your credentials(Special thanks to instructor)
+- Fill in the variables in ```.env``` with your OAuth2.0 Credentials
+- Ta-Da Working and hopefully sanitized code.
 
 ## Running
 - Using your terminal enter into the ```restaurant_menu_project``` directory
