@@ -11,3 +11,17 @@ This is my interpretation and take on the Item Catalog Project for the **Udacity
 
 ## Running
 - Using your terminal enter into the ```restaurant_menu_project``` directory
+- Within your terminal enter ```python project.py```
+- Open your Favorite Browser and in the url bar enter ```localhost:5000```
+- Enjoy the full functionality of the wonderful web app.
+- Profit
+
+## Known bugs
+- For some reason returns duplicate results
+- Facebook is the devil and getting their OAuth to work, don't work.
+
+## Credits
+- This code incorporates the udacity course from UD330
+- This code uses the fixes for said code thankfully provide by the instructor.
+
+end_of_line
