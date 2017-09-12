@@ -21,10 +21,15 @@ This is my interpretation and take on the Item Catalog Project for the **Udacity
 - Enjoy the full functionality of the wonderful web app.
 - Profit
 
+## Features
+- Oauth2.0 Login using Google API
+- CRUD Capabilities
+- Python Generated layouts using Flask
+
 ## Known bugs
 - For some reason returns duplicate results
 - Facebook is the devil and getting their OAuth to work, don't work.
-- Wtf am I forgetting...
+
 
 ## Credits
 - This code incorporates the udacity course from UD330
