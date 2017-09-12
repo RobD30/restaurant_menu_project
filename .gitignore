@@ -3,6 +3,5 @@ __pycache__/
 pyrepo/
 *.pyc
 .env
-README.md
 client_secrets.py
 variables.py
