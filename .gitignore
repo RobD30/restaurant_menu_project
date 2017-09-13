@@ -4,4 +4,3 @@ pyrepo/
 *.pyc
 .env
 client_secrets.py
-variables.py
